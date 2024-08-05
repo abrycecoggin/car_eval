@@ -33,7 +33,7 @@ def integer_training_setup(data):
     X = data.drop('class',axis=1)
     y = data['class']
 
-    return train_test_split(X, y, test_size=0.2, random_state=42)
+    return train_test_split(X, y, test_size=0.2, random_state=302)
 
 
 def oneHotEncoder_setup(data):
@@ -41,4 +41,4 @@ def oneHotEncoder_setup(data):
     X = encoder.fit_transform(data.drop('class',axis=1))
     y = data['class']
 
-    return train_test_split(X, y, test_size=0.2, random_state=42)
+    return train_test_split(X, y, test_size=0.2, random_state=302)
