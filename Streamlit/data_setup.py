@@ -16,7 +16,10 @@ map_categories_non_dep = {
     'VHIGH': 4, 'HIGH': 3, 'MED': 2, 'LOW': 1,
     '2': 2, '3': 3, '4': 4, '5 or MORE': 5,
     'SMALL': 1, 'BIG': 3,
-    'MORE': 5
+    'MORE': 5, 'vhigh': 4, 'high': 3, 'med': 2, 'low': 1,
+    '2': 2, '3': 3, '4': 4, '5more': 5,
+    'small': 1, 'med': 2, 'big': 3,
+    'more': 5
 }
 
 def integer_mapping(data):
@@ -26,7 +29,10 @@ def integer_mapping(data):
     #     return data
     # else:
     for i in data.columns:
-        data[i] = data[i].map(map_categories_non_dep)
+        if i == 'class':
+            pass
+        else:
+            data[i] = data[i].map(map_categories_non_dep)
     return data
 
 def integer_training_setup(data):

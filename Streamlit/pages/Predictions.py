@@ -64,7 +64,7 @@ def run():
                 with c1:
                     buying = st.selectbox('Buying', options=["VHIGH", 'HIGH', 'MED', 'LOW'], index=0)
 
-                    doors = st.selectbox('Doors', options=["2", '3', '4', '5 or More'], index=0)
+                    doors = st.selectbox('Doors', options=["2", '3', '4', '5 or MORE'], index=0)
 
                     lug_boot = st.selectbox('Lug Boot', options=['SMALL', 'MED', 'BIG'], index=0)
 
@@ -101,7 +101,7 @@ def run():
 
         # Customize the styler's CSS properties
         styler = styler.set_properties(**{
-            'font-size': '16px',
+            'font-size': '50px',
             'color': 'white',
             'border': '2px solid white',
             'background-image': 'linear-gradient(to right, #ef233c 0%, #9a031e 100%);',
