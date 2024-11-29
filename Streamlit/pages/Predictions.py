@@ -49,8 +49,7 @@ def run():
         # Apply the custom CSS styles
         st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
         # Display the title using Markdown with custom CSS
-        st.markdown("<h1 class='center'>Car Eval Classification</h1>", unsafe_allow_html=True)
-        #st.markdown("Drug Classification💉🩸")
+        st.markdown("<h1 class='center'>Car Eval Classification Prediction</h1>", unsafe_allow_html=True)
         st.write("")
         st.write("")
         st.write("")

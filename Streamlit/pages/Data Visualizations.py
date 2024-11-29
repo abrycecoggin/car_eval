@@ -11,7 +11,7 @@ import data_setup
 from data_setup import integer_mapping, integer_training_setup, oneHotEncoder_setup
 
 st.set_page_config(
-    page_title="Data Vizs",
+    page_title="Data Viz",
     layout="wide"
 )
 
@@ -32,9 +32,6 @@ def box_plot(var):
 
 def run():
     data = pd.read_csv(r'C:\Users\bryce\OneDrive\Desktop\Projects\car_eval\car.csv')
-
-    with st.sidebar:
-        st.write("This code will be printed to the sidebar.")
 
     header = st.container(border=True)
     content = st.container(border=True)
